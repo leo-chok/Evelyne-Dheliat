@@ -24,9 +24,13 @@ main {
   min-height: 300px;
   background-color: aliceblue;
   border-radius: 30px;
-  box-shadow: 0px 20px 40px rgba(30, 38, 47, 0.5);
+
   padding: 30px;
   box-sizing: border-box;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 main form {
@@ -34,6 +38,7 @@ main form {
   display: flex;
   justify-content: space-between;
   border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 main form input,
@@ -42,6 +47,8 @@ main form button {
   background-color: transparent;
   outline: none;
   padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 main form i {
@@ -55,11 +62,11 @@ main .result {
 
 main .result .name {
   font-weight: bold;
-  font-size: large;
+  font-size: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
 }
 
 main .temperature img {
@@ -68,11 +75,13 @@ main .temperature img {
 }
 
 main .temperature figcaption {
-  font-size: 3em;
+  font-size: 5em;
 }
 
 main .description {
   padding: 10px 0 30px;
+  text-transform: capitalize;
+  font-size: large;
 }
 
 main ul {
@@ -83,13 +92,15 @@ main ul {
 }
 
 main li {
-  background-color: #7cbbdb;
+  background-color: #97bbcd;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px 10px;
   background-image: linear-gradient(to bottom, transparent 30%, #0003 100%);
   font-weight: bold;
   font-size: small;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 main li i {
@@ -106,23 +117,23 @@ main li:nth-child(3) {
   background-color: #0a557a;
 }
 
-main.error{
-    animation: errorEffect 0.3s linear 1;
+main.error {
+  animation: errorEffect 0.3s linear 1;
 }
-@keyframes errorEffect{
-    0%{
-        transform: translate(10px, 5px)
-    }
-    25%{
-        transform: translate(-5px, 0)
-    }
-    50%{
-        transform: translate(8px, 2px)
-    }
-    75%{
-        transform: translate(-2px, 5px)
-    }
-    100%{
-        transform: translate(0, 0); 
-    }
+@keyframes errorEffect {
+  0% {
+    transform: translate(10px, 5px);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(8px, 2px);
+  }
+  75% {
+    transform: translate(-2px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
