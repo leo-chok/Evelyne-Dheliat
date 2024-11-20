@@ -9,12 +9,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #9fd3c7,
-    #142d4c
-  );
-  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, #9fd3c7, #142d4c);
+  font-family: "Poppins";
 }
 
 main {
@@ -22,7 +18,7 @@ main {
   max-width: 500px;
   height: max-content;
   min-height: 300px;
-  background-color:#ececec;
+  background-color: #ececec;
   border-radius: 30px;
 
   padding: 30px;
@@ -33,16 +29,23 @@ main {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+main p.titre {
+  font-size: 2em;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 main form {
   border: 1px solid #5553;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   border-radius: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-main form input{
-  min-width: 80%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding-left: 10px;
 }
 
 main form input,
@@ -66,26 +69,27 @@ main .result {
 
 main .result .name {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 main .temperature img {
   width: 200px;
-  filter: drop-shadow(0 20px 50px #000);
+  filter: drop-shadow(0 10px 60px #000);
 }
 
 main .temperature figcaption {
-  font-size: 5em;
+  font-size: 4em;
+  font-weight: 500;
 }
 
 main .description {
-  padding: 10px 0 30px;
+  padding: 0 0 50px;
   text-transform: capitalize;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 main ul {
@@ -142,6 +146,16 @@ main.error {
   }
 }
 
-button.enter:hover{
-cursor: pointer;
+button.enter:hover {
+  cursor: pointer;
+}
+
+footer {
+  color: #fff;
+  font-family: "Poppins";
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  filter: drop-shadow( 2px 2px 5px black
+);
 }
