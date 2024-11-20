@@ -36,9 +36,13 @@ main {
 main form {
   border: 1px solid #5553;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   border-radius: 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+main form input{
+  min-width: 80%;
 }
 
 main form input,
@@ -136,4 +140,8 @@ main.error {
   100% {
     transform: translate(0, 0);
   }
+}
+
+button.enter:hover{
+cursor: pointer;
 }

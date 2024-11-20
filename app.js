@@ -10,6 +10,7 @@ let clouds = document.getElementById('clouds');
 let humidity = document.getElementById('humidity');
 let pressure = document.getElementById('pressure');
 let form = document.querySelector('form');
+let button = document.querySelector('button.enter');
 let main = document.querySelector('main');
 
 
@@ -20,6 +21,14 @@ form.addEventListener('submit', (event) => {
         searchWeather();
     }
 })
+
+button.addEventListener('click', (buttonEvent) => {
+    buttonEvent.preventDefault();
+ if(valueSearch.value != ''){
+        searchWeather();
+    }
+})
+
 
 
 // Fonction searchWeather
