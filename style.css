@@ -11,8 +11,8 @@ body {
   align-items: center;
   background-image: linear-gradient(
     to bottom,
-    rgb(218, 235, 255) 20%,
-    rgb(57, 82, 113) 80%
+    #9fd3c7,
+    #142d4c
   );
   font-family: sans-serif;
 }
@@ -22,7 +22,7 @@ main {
   max-width: 500px;
   height: max-content;
   min-height: 300px;
-  background-color: aliceblue;
+  background-color:#ececec;
   border-radius: 30px;
 
   padding: 30px;
@@ -92,15 +92,15 @@ main ul {
 }
 
 main li {
-  background-color: #97bbcd;
+  background-color: #afc9e9;
   color: #fff;
   border-radius: 15px;
   padding: 20px 10px;
   background-image: linear-gradient(to bottom, transparent 30%, #0003 100%);
   font-weight: bold;
   font-size: small;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
 }
 
 main li i {
@@ -110,11 +110,11 @@ main li i {
 }
 
 main li:nth-child(2) {
-  background-color: #628bb5;
+  background-color: #5a86bb;
 }
 
 main li:nth-child(3) {
-  background-color: #0a557a;
+  background-color: #385170;
 }
 
 main.error {
