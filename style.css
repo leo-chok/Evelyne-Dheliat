@@ -4,26 +4,28 @@
 }
 
 body {
-  margin: 0;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #9fd3c7, #142d4c);
+  background-image: url(./src/fond_evelyne.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: "Poppins";
 }
 
 main {
-  width: 70%;
-  max-width: 500px;
-  height: max-content;
-  min-height: 300px;
-  background-color: #ececec;
+  width: 80%;
+  min-width: min-content;
+  background-color: rgba(236, 236, 236, 0.5);
   border-radius: 30px;
-
-  padding: 30px;
+  padding: 20px;
   box-sizing: border-box;
-
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(224, 245, 255, 0.29);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -150,12 +152,14 @@ button.enter:hover {
   cursor: pointer;
 }
 
-footer {
-  color: #fff;
-  font-family: "Poppins";
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 20px;
-  filter: drop-shadow( 2px 2px 5px black
-);
+.signature {
+  font-size: small;
+  color: rgb(80, 89, 90);
+  margin-top: 20px;
+  font-style: italic;
 }
+
+/* From https://css.glass */
+background: rgba(224, 245, 255, 0.67);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
